@@ -14,7 +14,7 @@ UPDATE customers
 SET phone = '555-1111'
 WHERE email = 'test.user@email.com';
 
--- READ AGAIN to prove update worked
+-- READ AGAIN
 SELECT * 
 FROM customers
 WHERE email = 'test.user@email.com';
@@ -23,7 +23,7 @@ WHERE email = 'test.user@email.com';
 DELETE FROM customers
 WHERE email = 'test.user@email.com';
 
--- READ AGAIN to prove delete worked
+-- FINAL READ
 SELECT * 
 FROM customers
 WHERE email = 'test.user@email.com';
